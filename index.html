@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slim - Framework CSS simples</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/slim.css">
+	<link rel="stylesheet" type="text/css" href="css/prettify.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+	<body id="top">
+		<nav class="navbar navbar-flat-default navbar-flat-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-button">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a href="#top" class="brand">Slim</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-list navbar-right">
+						<li>
+							<a href="#intro">Introdução</a>
+						</li>
+						<li>
+							<a href="#" data-popover="#componentsNavPopover">Componentes</a>
+							<div class="popover" id="componentsNavPopover">
+								<ul class="popover-list">
+									<li class="popover-item">
+										<a href="#grid" class="popover-link">Grid</a>
+									</li>
+									<li class="popover-item">
+										<a href="#typography" class="popover-link">Tipografia</a>
+									</li>
+									<li class="popover-item">
+										<a href="#alerts" class="popover-link">Alertas</a>
+									</li>
+									<li class="popover-item">
+										<a href="#buttons" class="popover-link">Botões</a>
+									</li>
+									<li class="popover-item">
+										<a href="#forms" class="popover-link">Formulários</a>
+									</li>
+									<li class="popover-item">
+										<a href="#lists" class="popover-link">Listas</a>
+									</li>
+									<li class="popover-item">
+										<a href="#tables" class="popover-link">Tabelas</a>
+									</li>
+									<li class="popover-item">
+										<a href="#images" class="popover-link">Imagens</a>
+									</li>
+									<li class="popover-item">
+										<a href="#utility" class="popover-link">Utilidades</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#examples">Exemplos</a>
+						</li>
+						<li>
+							<a href="#" data-popover="#moreNavPopover">Mais</a>
+							<div class="popover" id="moreNavPopover">
+								<ul class="popover-list">
+									<li class="popover-item">
+										<a href="https://www.facebook.com" target="_blank" class="popover-link">Facebook</a>
+									</li>
+									<li class="popover-item">
+										<a href="https://twitter.com" target="_blank" class="popover-link">Twitter</a>
+									</li>
+									<li class="popover-item">
+										<a href="https://github.com" target="_blank" class="popover-link">GitHub</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center">
+							<h2>
+								<strong>
+									Slim, Framework CSS responsivo
+								</strong>
+							</h2>
+
+							<a href="#" class="button button-flat-info">Download</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="marketing">
+					<div class="row">
+						<div class="col-4">
+							<div class="text-center">
+								<h1>
+									<i class="fa fa-edit"></i>
+								</h1>
+								<p>
+									Código bem simples, com facilidade de alteração caso necessário.
+								</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="text-center">
+								<h1>
+									<i class="fa fa-code"></i>
+								</h1>
+								<p>
+									Código bem documentado para melhor entendimento do desenvolvedor.
+								</p>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="text-center">
+								<h1>
+									<i class="fa fa-github"></i>
+								</h1>
+								<p>
+									Projeto Open Source, disponível no GitHub, lá você também encontra exemplos.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="section section-intro" id="intro">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>O Slim</h4>
+						</div>
+						<p>
+							Você deve usar o <strong>Slim</strong> se estiver embarcando em um projeto menor ou simplesmente não sinta que precisa de toda a utilidade de estruturas maiores. O <strong>Slim</strong> apenas define um bloco de elementos HTML padrão e inclui um <a href="#grid">grid</a>, mas isso geralmente é mais do que suficiente para começar. Na verdade, este site é construído no <strong>Slim</strong>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-grid" id="grid">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Sistema de grid</h4>
+						</div>
+						<p>
+							<strong>Eles são ideais para layouts responsivos</strong>. Aqui é onde os sistemas de grid dominam. Eles tornam incrivelmente fácil a criação de interfaces mobile amigáveis, que são adaptadas para diferentes tamanhos de tela. Vá em frente, redimensione o seu navegador.
+						</p>
+					</div>
+				</div>
+				<div class="row custom">
+					<div class="col-1">One</div>
+					<div class="col-11">Eleven</div>
+				</div>
+				<div class="row custom">
+					<div class="col-2">Two</div>
+					<div class="col-10">Ten</div>
+				</div>
+				<div class="row custom">
+					<div class="col-3">Three</div>
+					<div class="col-9">Nine</div>
+				</div>
+				<div class="row custom">
+					<div class="col-4">Four</div>
+					<div class="col-8">Eight</div>
+				</div>
+				<div class="row custom">
+					<div class="col-5">Five</div>
+					<div class="col-7">Seven</div>
+				</div>
+				<div class="row custom">
+					<div class="col-6">Six</div>
+					<div class="col-6">Six</div>
+				</div>
+
+				<div class="row custom">
+					<div class="col-11">Eleven</div>
+					<div class="col-1">One</div>
+				</div>
+				<div class="row custom">
+					<div class="col-10">Ten</div>
+					<div class="col-2">Two</div>
+				</div>
+				<div class="row custom">
+					<div class="col-9">Nine</div>
+					<div class="col-3">Three</div>
+				</div>
+				<div class="row custom">
+					<div class="col-8">Eight</div>
+					<div class="col-4">Four</div>
+				</div>
+				<div class="row custom">
+					<div class="col-7">Seven</div>
+					<div class="col-5">Five</div>
+				</div>
+				<div class="row custom">
+					<div class="col-6">Six</div>
+					<div class="col-6">Six</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<!-- .container é o conteúdo centralizado principal -->
+<div class="container">
+	<!-- colunas devem ser o filho imediato de um .row -->
+	<div class="row">
+		<div class="col-1">One</div>
+		<div class="col-11">Eleven</div>
+	</div>
+	<div class="row">
+		<!-- Use apenas uma classe .col-* e um numero, exemplo: .col-2 -->
+		<div class="col-2">Two</div>
+		<div class="col-10">Ten</div>
+	</div>
+</div>
+<!-- Nota: as colunas podem ser aninhadas, mas não é recomendado, uma vez que o grid do Slim possui calhas baseadas em %, o que significa que um grid aninhada resulta em variável com calhas (o que pode acabar sendo * realmente * pequeno em certos tamanhos de navegador / dispositivo) -->
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-typography" id="typography">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Tipografia</h4>
+						</div>
+						<p>
+							A tipografia está definida com o tamanho em <code>rems</code>, então os tamanhos de fontes e as relações espaciais podem ser dimensionadas de forma qualificada com base em uma propriedade <code>&lt;html&gt;</code> de tamanho de fonte única. Fora da caixa, o <strong>Slim</strong> nunca muda o tamanho da fonte do <code>&lt;html&gt;</code>, mas caso você precise de seu projeto todas as medias ainda são base 10, em bora assim,
+							<code>&lt;h1&gt;</code> com <code>5.0rem</code> o tamanho da fonte apenas sigifica <code>50px</code>.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<p>
+							A tipografia de base usada é <a href="https://fonts.google.com/specimen/Raleway" target="_blank">Raleway</a> servido pelo Google, definido em <code>15rem (15px)</code> com um <code>line-height: 1.6 (24px)</code>. Outros tipos básicos como <a href="#">Links</a>, <strong>Forte</strong>, <em>ênfase</em> e <u>sublinhados</u> estão obviamente incluídos.
+						</p>
+					</div>
+					<div class="col-6">
+						<h1>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h1&gt;</code></span>
+						</h1>
+						<h2>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h2&gt;</code></span>
+						</h2>
+						<h3>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h3&gt;</code></span>
+						</h3>
+						<h4>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h4&gt;</code></span>
+						</h4>
+						<h5>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h5&gt;</code></span>
+						</h5>
+						<h6>
+							<font>Typography</font>
+							<span class="heading-font-size"><code>&lt;h6&gt;</code></span>
+						</h6>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<!-- Rótulos padrão -->
+<h1>Typography</h1>
+<h2>Typography</h2>
+<h3>Typography</h3>
+<h4>Typography</h4>
+<h5>Typography</h5>
+<h6>Typography</h6>
+
+<!-- Tamanho da tipografia base -->
+<p>A tipografia de base usada é Raleway, definido em 15rem (15px) com um line-height: 1.6 (24px)</p>
+
+<!-- Tags de texto com estilo -->
+<strong>Forte</strong>
+<em>ênfase</em>
+<a>Links</a>
+<u>sublinhados</u>
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-alerts" id="alerts">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Alertas</h4>
+						</div>
+						<p>
+							O Slim, assim como alguns frameworks mais conhecido possui classes de alertas, responsáveis por indicar cada ação feita, por exemplo, validação de formulários, veja abaixo alguns exemplos.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="alert alert-flat-info">.alert .alert-flat-info</div>
+						<div class="alert alert-flat-success">.alert .alert-flat-success</div>
+						<div class="alert alert-flat-danger">.alert .alert-flat-danger</div>
+						<div class="alert alert-flat-warning">.alert .alert-flat-warning</div>
+
+						<p>Onde, <code>info</code>, indica uma ação de informação, <code>success</code> indica uma ação de sucesso, <code>danger</code> indica uma ação de erro, e <code>warning</code> indica uma ação de atenção.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<div class="alert alert-flat-info">.alert .alert-flat-info</div>
+<div class="alert alert-flat-success">.alert .alert-flat-success</div>
+<div class="alert alert-flat-danger">.alert .alert-flat-danger</div>
+<div class="alert alert-flat-warning">.alert .alert-flat-warning</div>
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-buttons" id="buttons">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Botões</h4>
+						</div>
+						<p>
+							Os botões vêm em dois estilos básicos. O <code>button-flat-default</code> elemento padrão é simples, enquanto o <code>.button-flat-info</code> é vibrante e proeminente. Os estilos de botões são aplicados a vários elementos de formulário apropriados, mas também podem ser anexados arbitrariamente a links com uma classe <code>.button .button-flat-*</code>. Use a classe <code>.block</code> para usar a largura total da <code>div</code> pai.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<a href="#" class="button button-flat-default">Padrão</a>
+						<a href="#" class="button button-flat-info">Informação</a>
+						<a href="#" class="button button-flat-success">Sucesso</a>
+						<a href="#" class="button button-flat-danger">Erro</a>
+						<a href="#" class="button button-flat-warning">Atenção</a>
+
+						<button class="button button-flat-default block">Submit Block Padrão</button>
+						<button class="button button-flat-info block">Submit Block Informação</button>
+						<button class="button button-flat-success block">Submit Block Sucesso</button>
+						<button class="button button-flat-danger block">Submit Block Erro</button>
+						<button class="button button-flat-warning block">Submit Block Atenção</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<!-- Botões em links -->
+<a href="#" class="button button-flat-default">Padrão</a>
+<a href="#" class="button button-flat-info">Informação</a>
+<a href="#" class="button button-flat-success">Sucesso</a>
+<a href="#" class="button button-flat-danger">Erro</a>
+<a href="#" class="button button-flat-warning">Atenção</a>
+
+<!-- Botões em buttons ou inputs submit -->
+<button class="button button-flat-default block">Submit Block Padrão</button>
+<button class="button button-flat-info block">Submit Block Informação</button>
+<button class="button button-flat-success block">Submit Block Sucesso</button>
+<button class="button button-flat-danger block">Submit Block Erro</button>
+<button class="button button-flat-warning block">Submit Block Atenção</button>
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-forms" id="forms">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Formulários</h4>
+						</div>
+						<p>
+							Os formulários são uma enorme dor, mas espero que esses estilos tornem um pouco mais fácil. Todas os <code>inputs</code>, <code>selects</code> e <code>buttons</code> são normalizados para um cross-browser de altura comum para que os <code>inputs</code> possam ser empilhados ou colocadas uma em relação à outra.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<form>
+							<div class="form-area">
+								<label>Demonstração</label>
+								<input type="text" placeholder="Demonstração" class="form-build">
+							</div>
+							<div class="form-area">
+								<label>Selecione</label>
+								<select class="form-build">
+									<option>Selecione</option>
+									<option>Demonstração</option>
+								</select>
+							</div>
+							<div class="form-area">
+								<label>Mensagem:</label>
+								<textarea placeholder="Mensagem" class="form-build"></textarea>
+							</div>
+							<div class="form-area">
+								<label>
+									<input type="checkbox">
+									<span class="label-body">
+										Exemplo de checkbox
+									</span>
+								</label>
+							</div>
+							<button class="button button-flat-info">
+								Enviar
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<form>
+	<div class="form-area">
+		<label>Demonstração</label>
+		<input type="text" placeholder="Demonstração" class="form-build">
+	</div>
+	<div class="form-area">
+		<label>Selecione</label>
+		<select class="form-build">
+			<option>Selecione</option>
+			<option>Demonstração</option>
+		</select>
+	</div>
+	<div class="form-area">
+		<label>Mensagem:</label>
+		<textarea placeholder="Mensagem" class="form-build"></textarea>
+	</div>
+	<div class="form-area">
+		<label>
+			<input type="checkbox">
+			<span class="label-body">
+				Exemplo de checkbox
+			</span>
+		</label>
+	</div>
+	<button class="button button-flat-info">
+		Enviar
+	</button>
+</form>
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-lists" id="lists">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Listas</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<ul>
+							<li>As listas não ordenadas possuem estilos básicos</li>
+							<li>
+								Eles usam o estilo da lista de círculos
+								<ul>
+									<li>Listas aninhadas com estilo para se sentir bem</li>
+									<li>Pode aninhar qualquer tipo de lista no outro</li>
+								</ul>
+							</li>
+							<li>Apenas mais itens da lista</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<ol>
+							<li>As listas encomendadas também possuem estilos básicos</li>
+							<li>
+								Eles usam o estilo da lista decimal
+								<ul>
+									<li>Ordenado e desordenado pode ser aninhado</li>
+									<li>Pode aninhar qualquer tipo de lista no outro</li>
+								</ul>
+							</li>
+							<li>Último item da lista apenas pela diversão</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<ul>
+	<li>As listas não ordenadas possuem estilos básicos</li>
+	<li>
+		Eles usam o estilo da lista de círculos
+		<ul>
+			<li>Listas aninhadas com estilo para se sentir bem</li>
+			<li>Pode aninhar qualquer tipo de lista no outro</li>
+		</ul>
+	</li>
+	<li>Apenas mais itens da lista</li>
+</ul>
+<!-- Substitua facilmente qualquer <ul> ou um <ol> para obter listas de números ou sublistas. O Slim não suporta listas aninhadas mais de 2 níveis -->
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-tables" id="tables">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Tabelas</h4>
+						</div>
+						<p>
+							Certifique-se de usar marcação de tabela corretamente formada com <code>&lt;thead&gt;</code> e <code>&lt;tbody&gt;</code> ao construir uma tabela.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Nome</th>
+										<th>Idade</th>
+										<th>Gênero</th>
+										<th>Local</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Guilherme Alves</td>
+										<td>22</td>
+										<td>Masculino</td>
+										<td>Mogi Guaçu - SP</td>
+									</tr>
+									<tr>
+										<td>Renata Valicki</td>
+										<td>20</td>
+										<td>Feminino</td>
+										<td>Fazenda Rio Grande - PR</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<table class="table">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Idade</th>
+			<th>Gênero</th>
+			<th>Local</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Guilherme Alves</td>
+			<td>22</td>
+			<td>Masculino</td>
+			<td>Mogi Guaçu - SP</td>
+		</tr>
+		<tr>
+			<td>Renata Valicki</td>
+			<td>20</td>
+			<td>Feminino</td>
+			<td>Fazenda Rio Grande - PR</td>
+		</tr>
+	</tbody>
+</table>
+<!-- Use a classe .responsive para que a tabela adapte-se em dispositivos menores. -->
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-images" id="images">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Imagens</h4>
+						</div>
+						<p>
+							Possuímos também algumas classes úteis para imagens.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="text-center">
+							<img src="http://via.placeholder.com/240x240" class="img-rounded">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="http://via.placeholder.com/240x240" class="img-circle">
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="text-center">
+							<img src="http://via.placeholder.com/240x240">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+<!-- Border radius com 6px -->
+<img src="http://via.placeholder.com/240x240" class="img-rounded">
+
+<!-- Border radius com 6px -->
+<img src="http://via.placeholder.com/240x240" class="img-circle">
+
+<!-- Sem border radius com -->
+<img src="http://via.placeholder.com/240x240">
+
+<!-- Imagem responsiva -->
+<img src="http://via.placeholder.com/240x240" class="img-responsive">
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-utility" id="utility">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Classes de utilidade pública</h4>
+						</div>
+						<p>
+							O <strong>Slim</strong> possui uma série de pequenas classes de utilidade que atuam como ajudantes fáceis de usar. Às vezes, é melhor usar uma classe de utilidade do que criar uma nova classe inteira apenas para flutuar um elemento.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<pre class="code-example">
+							<code class="code-example-body prettyprint">
+/* Utility
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Centraliza um elemento */
+.block {
+  display: block;
+  width: 100%;
+}
+
+/* Esquerda, direita */
+.left   { float: left; }
+.right  { float: right; }
+
+/* Alinhamento de textos */
+.text-left      { text-align: left; }
+.text-right     { text-align: right; }
+.text-center    { text-align: center; }
+.text-justify   { text-align: justify; }
+.text-justify   { text-align: justify-all; }
+
+/* Formatações de textos */
+.text-lowercase   { text-transform: lowercase; }
+.text-uppercase   { text-transform: uppercase; }
+.text-capitalize  { text-transform: capitalize; }
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section-examples" id="examples">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<hr>
+						<div class="text-uppercase">
+							<h4>Exemplos</h4>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 text-center">
+						<img src="img/ex1.png" class="img-rounded img-responsive">
+					</div>
+					<div class="col-8 examples-slim">
+						<div class="text-uppercase">
+							<h5>
+								Exemplo
+							</h5>
+						</div>
+						<p>
+							Simples webiste em <u>Single Page</u>, construido com <strong>Slim</strong>.
+						</p>
+
+						<a href="#" class="button button-flat-default">Demonstração</a>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-4 text-center">
+						<img src="http://via.placeholder.com/240x180" class="img-rounded">
+					</div>
+					<div class="col-8 examples-slim">
+						<div class="text-uppercase">
+							<h5>
+								Mais em breve!
+							</h5>
+						</div>
+						<p>
+							Mais exemplos serão adicionados para ajudar alguém a começar ou mais familiarizado com o funcionamento do <strong>Slim</strong>. O objetivo é a educação. Se você estiver mais interessado em exemplos reais, logo vou criar uma lista "Construída no <strong>Slim</strong>".
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="js/jquery.js"></script>
+		<script src="js/run_prettify.js"></script>
+		<script src="js/slim.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
